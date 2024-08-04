@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <!-- top banner -->
+    <div class="main-body">
+      <header class="header">
+        <div class="header-container flex">
+          <div class="cicero-logo">
+            <img
+              class="cicero-img"
+              src="/public/Cicero_Logo.png"
+              alt="Cicero Logo"
+            />
+          </div>
+
+          <div class="search-bar flex">
+            <input class="search-box" type="text" placeholder="Search" />
+            <img class="search-icon" src="/public/search.svg" alt="Search" />
+          </div>
+
+          <div class="icons flex">
+            <div class="login flex">
+              <img
+                class="login-icon"
+                loading="lazy"
+                alt="Sign In"
+                src="./public/signin.svg"
+              />
+              <a class="sign-in-text">Sign In</a>
+            </div>
+
+            <div class="cart flex">
+              <img
+                class="cart-icon"
+                loading="lazy"
+                alt="Cart"
+                src="/public/cart.svg"
+              />
+              <a class="cart-text">Cart</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- nav bar -->
+
+      <div class="main-nav">
+        <div class="main-navdiv-left flex">
+          <div class="nav-items_with_icon flex">
+            <a href="#">All Categories</a>
+            <img src="/public/down_arrow.svg" alt="Dropdown" />
+          </div>
+          <div class="nav-items_with_icon flex">
+            <a href="#">Brands</a>
+            <img src="/public/down_arrow.svg" alt="Dropdown" />
+          </div>
+          <div class="nav-items"><a href="#">Contact Us</a></div>
+          <div class="nav-items"><a href="#">About Us</a></div>
+          <div class="nav-items"><a href="#">Line Card</a></div>
+          <div class="nav-items"><a href="#">PO Order</a></div>
+        </div>
+
+        <div class="main-nav-right">
+          <div class="main-nav-right-inner flex">
+            <div><img src="/public/call.svg" alt="Call" /></div>
+            <div><a href="#">1-874-724-8088 </a></div>
+          </div>
+          <div class="main-nav-right-inner flex">
+            <img src="/public/mail.svg" alt="Mail" />
+            <a href="#">sales@cicerosupply.com</a>
+          </div>
+          <div class="main-nav-right-inner flex">
+            <img src="/public/message.svg" alt="Message" />
+            <a href="#">Request a quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hamburger-menu flex">
+        <div class="hamburger">
+          <img class="hamburger" src="/public/hambuger.svg" alt="Menu" />
+        </div>
+        <div class="search-bar-new flex">
+          <input class="search-box-new" type="text" placeholder="Search" />
+          <img class="search-icon-new" src="/public/search.svg" alt="Search" />
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div class="banner flex">
+        <img class="banner-img" src="/public/banner.png" alt="Banner" />
+
+        <section class="banner-secondary">
+          <div class="supplier-content flex">
+            <h2 class="supplier-title">
+              Become a Cicero Supply Online Customer
+            </h2>
+
+            <p class="supplier-description flex">
+              Select your products and submit purchase order online
+            </p>
+          </div>
+
+          <button class="supplier-cta flex" tabindex="0">
+            Click more for details
+          </button>
+        </section>
+      </div>
+
+      <!-- Headers Brands -->
+      <div class="shop-by-brand-container flex">
+        <h2 class="shop-by-brand-title">Shop By Brand</h2>
+        <a href="#" class="view-all-brands-link">View all brands</a>
+      </div>
+
+      <!-- Carousel -->
+
+      <section class="brand-carousel">
+        <div class="chevron-icon-left">
+          <img
+            loading="lazy"
+            src="/public/left.svg"
+            class="chevron-img"
+            alt=""
+          />
+        </div>
+
+        <div class="brand-carousel-list">
+
+          <div class="brand-item">
+              <img
+                loading="lazy"
+                src="/public/brand3m.png"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>
+          <div class="brand-item">
+              <img
+                loading="lazy"
+                src="/public/brandpip.png"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>  
+          <div class="brand-item" id ="third">
+              <img
+                loading="lazy"
+                src="/public/brandradians.png"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>
+          <div class="brand-item" id = "fourth">
+              <img
+                loading="lazy"
+                src="/public/brand_Remco.svg"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>
+          <div class="brand-item" id ="fifth">
+              <img
+                loading="lazy"
+                src="/public/brand_universal.png"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>
+
+          <div class="brand-item " id="sixth">
+              <img
+                loading="lazy"
+                src="/public/barndW.png"
+                class="brand-logo"
+                alt="Brand logo"
+              />
+          </div>
+
+          
+
+        </div>
+
+        <div class="chevron-icon-right">
+          <img
+            loading="lazy"
+            src="/public/right_arrow.png"
+            class="chevron-img"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <div class="carousel-navigation flex">
+        <img src="/public/navigation.svg" alt="" />
+      </div>
+
+      <!-- Shop by Categories -->
+
+      <div class="shop-by-category-container">
+        <div class="shop-category-container-heading">
+          <h2 class="category-title">Shop By Category</h2>
+          <a href="#" class="view-all-link">View all categories</a>
+        </div>
+
+        <div class="shop-by-catergory-list flex">
+          <div class="shop-by-catergory-row flex">
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+          </div>
+
+          <div class="shop-by-catergory-row flex">
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+          </div>
+
+          <div class="shop-by-catergory-row flex">
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+          </div>
+
+          <div class="shop-by-catergory-row flex">
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+            <div class="shop-by-catergory-box flex">
+              <p class="categories-content">Coatings</p>
+              <img src="./public/plus_icon.svg" alt="plus" />
+            </div>
+          </div>
+        </div>
+        <a href="#" class="view-all-link-new">View all categories</a>
+
+        <!-- <div class="view-all-link-new-box"> -->
+        <!-- </div> -->
+      </div>
+
+      <!-- About Us -->
+
+      <section class="about-section">
+        <img
+          loading="lazy"
+          src="/public/aboutus.png"
+          class="company-image"
+          alt="Cicero Supply Company"
+        />
+
+        <div class="content-wrapper">
+          <h2 class="section-title">About Cicero Supply</h2>
+
+          <ul class="description-list">
+            <li class="description-item">
+              Cicero Supply has offered fast, dependable service since 1951. We
+              provide easy ordering, easy re-ordering, and deep sourcing for
+              even the hardest-to-find parts.
+            </li>
+
+            <li class="description-item">
+              Cicero Supply requires no minimum orders and offers free freight
+              within the Chicagoland delivery area.
+            </li>
+
+            <li class="description-item">
+              With a full set of the most popular industrial supplies and
+              experts on staff specializing in difficult items, let Cicero
+              Supply's superior product knowledge and industry experience help
+              you increase productivity and reduce costs today.
+            </li>
+          </ul>
+
+          <button class="cta-button" tabindex="0">Know More</button>
+        </div>
+      </section>
+
+      <!-- Higlight Grid -->
+
+      <section class="highlights-container">
+        <article class="highlight-card">
+          <img
+            loading="lazy"
+            src="/public/mid_grid1.png"
+            alt="Complete Line of Products"
+            class="highlight-image"
+          />
+
+          <div class="highlight-content">
+            <div class="highlight-text">
+              <h2 class="highlight-title">Complete Line of Products</h2>
+
+              <p class="highlight-description">
+                The fullest line of products and distribution.
+              </p>
+            </div>
+
+            <div class="highlight-button-container flex">
+              <button class="highlight-button">Shop Products</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="highlight-card">
+          <img
+            loading="lazy"
+            src="/public/midgrid2.png"
+            alt="Custom Solutions for Clients"
+            class="highlight-image"
+          />
+
+          <div class="highlight-content">
+            <div class="highlight-text">
+              <h2 class="highlight-title">Custom Solutions for Clients</h2>
+
+              <p class="highlight-description">
+                Personalized shopping lists to make checkout as fast as
+                possible.
+              </p>
+            </div>
+            <div class="highlight-button-container flex">
+              <button class="highlight-button">Contact Us</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="highlight-card">
+          <img
+            loading="lazy"
+            src="/public/midgrid3.png"
+            alt="Become a Cicero Supply Preferred Shopper"
+            class="highlight-image"
+          />
+
+          <div class="highlight-content">
+            <div class="highlight-text">
+              <h2 class="highlight-title">
+                Become a Cicero Supply Preferred Shopper
+              </h2>
+
+              <p class="highlight-description">
+                Select your products and submit your purchase order online.
+              </p>
+            </div>
+
+            <div class="highlight-button-container flex">
+              <button class="highlight-button">Apply Today</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Footer Banner -->
+
+      <div class="footer-banner flex">
+        <img class="footer-banner-img" src="/public/footer_banner.png" alt="" />
+      </div>
+
+      <!-- signup -->
+
+      <section class="newsletter-container">
+        <div class="newsletter-content flex">
+          <p class="newsletter-title">Sign Up For Our Newsletter</p>
+
+          <form class="newsletter-form flex">
+            <label for="emailInput" class="visually-hidden"
+              >Email address</label
+            >
+
+            <input
+              type="email"
+              id="emailInput"
+              class="email-input"
+              placeholder="Email address"
+              aria-label="Email address"
+              required
+            />
+
+            <button type="submit" class="subscribe-button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer Navigation -->
+      <footer class="footer">
+        <!-- <div class="main-footer-box"> -->
+        <div class="main-footer flex">
+          <div class="main-footer-inner flex">
+            <p class="main-footer-title"><b>Information</b></p>
+            <a href="#">
+              <p>Terms & Conditions</p>
+            </a>
+            <a href="#">
+              <p>Privacy Policy</p>
+            </a>
+            <a href="#">
+              <p>Conflict Minerals Policy</p>
+            </a>
+          </div>
+
+          <div class="main-footer-inner flex">
+            <p class="main-footer-title"><b>Quick Links</b></p>
+
+            <a href="#">
+              <p>About Us</p>
+            </a>
+            <a href="#">
+              <p>Line Card</p>
+            </a>
+            <a href="#">
+              <p>Contact Us</p>
+            </a>
+          </div>
+
+          <div class="main-footer-inner flex">
+            <p class="main-footer-title"><b>My Account</b></p>
+
+            <a href="#">
+              <p>Sign In</p>
+            </a>
+            <a href="#">
+              <p>Register</p>
+            </a>
+            <a href="#">
+              <p>My Orders</p>
+            </a>
+            <a href="#">
+              <p>My Account</p>
+            </a>
+          </div>
+
+          <div class="main-footer-inner flex">
+            <p class="main-footer-title"><b>Reach Us</b></p>
+            <p>Questions? Call Us</p>
+            <div class="main-footer-icon flex">
+              <img alt="" src="./public/call.svg" />
+              <p>847-724-8088</p>
+            </div>
+
+            <div class="main-footer-line"></div>
+
+            <div class="main-footer-icon flex">
+              <p>Follow Us</p>
+              <div>
+                <img alt="" src="./public/linkedin.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-brand">
+          <div class="footer-brands flex">
+            <img
+              class="footer-brands-icon"
+              alt="ISA"
+              src="./public/footer_brand_isa.png"
+            />
+            <img
+              class="footer-brands-icon"
+              alt="WBENC"
+              src="./public/footer_brand_wbenc.png"
+            />
+            <img
+              class="footer-brands-icon"
+              alt="Gold Man"
+              src="./public/footer_brand_gold_man.png"
+            />
+            <img
+              class="footer-brands-icon"
+              alt="NetPlus"
+              src="./public/footer_brand_netplus.png"
+            />
+          </div>
+
+          <!-- Copyright-Footer -->
+
+          <div class="copyright flex">
+            <div class="copyright-message flex">
+              <p>© 2023 Cicero Manufacturing & Supply Company, Inc.</p>
+            </div>
+
+            <div class="payment-options">
+              <div class="payment-options-img">
+                <img
+                  class="payment-options-img"
+                  alt="Amex"
+                  src="./public/mini_footer_amex.svg"
+                />
+                <img
+                  class="payment-options-img"
+                  alt="Discover"
+                  src="./public/mini_footer_discover.svg"
+                />
+                <img
+                  class="payment-options-img"
+                  alt="MasterCard"
+                  src="./public/mini_footer_master_card.svg"
+                />
+                <img
+                  class="payment-options-img"
+                  alt="Visa"
+                  src="./public/mini_footer_visa.svg"
+                />
+                <img
+                  class="payment-options-img"
+                  alt="Paypal"
+                  src="./public/mini_footer_paypal.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
