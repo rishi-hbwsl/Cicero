@@ -252,7 +252,6 @@ body {
 .carousel-navigation{
   justify-content: center;
   margin-top: 2rem ;
-
 }
 
 .shop-by-brand-title {
@@ -313,6 +312,8 @@ body {
   display: flex;
   right: 2rem;
   margin-left: -2em;
+  z-index: 1;
+  width: 1rem;
 }
 .chevron-img {
   width: 1.5vw;
